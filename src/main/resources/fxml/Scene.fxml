@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.prvNumeri.FXMLController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Nuova Partita">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="tastoInizio" mnemonicParsing="false" onAction="#voglioIniziare" text="Inizia!">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Inserirsci un numero">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="spazioTentativo" editable="false">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="tastoProva" disable="true" mnemonicParsing="false" onAction="#voglioProvare" text="Prova!">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Benvenuto al Gioco dei Numeri!" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Italic" size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <TextArea fx:id="spazioFinale" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
